@@ -1,0 +1,14 @@
+COMANDO COMUNS
+
+ls  lista arquivos e pastas
+cd navegar no PC
+cd nomeDaPasta entra na pasta
+cd.. volta para o caminho anterior
+rm -rf remove a pasta
+
+
+COMANDO DO GIT
+
+git clone clona o repositório
+
+passo a passo para atualizar os arquivos
