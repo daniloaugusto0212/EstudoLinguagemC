@@ -6,12 +6,17 @@ int main (void){
     int num1, num2, operador ;
     int resultado;
     int i;
-    printf("Digite dois números inteiros: \n");
+    system("clear");
+    printf("\n ***** CALCULADORA *****\n\n");
+    printf("Digite o 1º número para calcular: \n");
     scanf("%i", &num1);
-    scanf("%i", &num2);
 
     printf("Digite um operador:\n[1] Soma\n[2] Subtração\n[3] Multiplicação\n[4] Divisão\n[5] Exponenciação\n");
     scanf("%i", &operador);
+
+    printf("Digite o 2º número para calcular: \n");
+    scanf("%i", &num2);
+    
     switch (operador)
     {
     case 1:
