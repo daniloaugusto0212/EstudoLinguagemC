@@ -100,6 +100,7 @@ void cadastrar(){ //Área de cadastro
         getchar();
     }
     while (op != 0 && cont <= 10) ;
+    
 
 }
 void listar(){
