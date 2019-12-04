@@ -39,11 +39,17 @@ void menu(){  //Menu principal
             break;
 
        default:
+
            break;
        }
-       getchar();
+       if (op != 0)
+       {
+           getchar();
+       }       
+       
     } while (op != 0);
 }
+
 
 
 void cadastrar(){ //Área de cadastro
@@ -55,7 +61,7 @@ void cadastrar(){ //Área de cadastro
     int op, cont;
     do
     {
-                
+        system("clear");        
         printf("Marca: \n");
         fgets(marca,sizeof(marca),stdin);
 
@@ -90,7 +96,8 @@ void cadastrar(){ //Área de cadastro
         }        
     printf("\n1 = Continuar\n0 - Sair\n");
     scanf("%d", &op);
-    getchar();
+    if (op == 1)
+        getchar();
     }
     while (op != 0 && cont <= 10) ;
 
@@ -240,6 +247,8 @@ void limparBuffer(){
 int main ()
 {
     menu();
+
+    printf("Fim do programa...\n");
 
 
     return 0;
