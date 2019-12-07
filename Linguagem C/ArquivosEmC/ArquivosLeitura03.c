@@ -19,12 +19,12 @@ int main(){
 
 
     if (parq == NULL){
-        perror("fopen\n");
+        perror("Não foi pssível abrir o arquivo!\n");
         exit(EXIT_FAILURE);
     }
     //tamanho em bytes da struct Alunos
     tamanhoBuffer = sizeof(alu1);
-    for ( i = 0; i < 3; i++)
+    for ( i = 0; i < 2; i++)
     {
         fseek(parq, i *tamanhoBuffer, SEEK_SET);
         fread(&alu1, sizeof(alu1), 1, parq);
